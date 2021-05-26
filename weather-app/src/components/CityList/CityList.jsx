@@ -4,11 +4,12 @@ import Grid from '@material-ui/core/Grid';
 import CityInfo from '../CityInfo';
 import Weather from '../Weather';
 //li es un item  tag html que tiene el role "listitem
-const renderCityAndCountry = (cityAndCountry) => {
+//funcion que retorna otra funcion
+const renderCityAndCountry = (eventOnClickCity) => (cityAndCountry) => {
   const { city, country } = cityAndCountry;
 
   return (
-    <li key={city}>
+    <li key={city} onClick={eventOnClickCity}>
       <Grid container justify='center' alignItems='center'>
         <Grid item xs={12} md={8}>
           <CityInfo city={city} country={country} />
@@ -23,11 +24,11 @@ const renderCityAndCountry = (cityAndCountry) => {
   );
 
 };
-const CityList = ({ cities }) => {
+const CityList = ({ cities, onclickCity }) => {
   return (
     <ul>
       {
-        cities.map((cityAndCountry) => renderCityAndCountry(cityAndCountry))
+        cities.map((cityAndCountry) => renderCityAndCountry(onclickCity)(cityAndCountry))
       }
     </ul>
   );
@@ -35,6 +36,7 @@ const CityList = ({ cities }) => {
 
 CityList.propTypes = {
   cities: PropTypes.array.isRequired,
+  onclickCity: PropTypes.func.isRequired,
 };
 
 export default CityList;

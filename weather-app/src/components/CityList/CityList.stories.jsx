@@ -1,4 +1,6 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { action } from '@storybook/addon-actions';
 import CityList from './CityList';
 
 export default {
@@ -13,4 +15,4 @@ const cities = [
   { city: 'Lima', country: 'Peru' },
 ];
 
-export const CityListExample = () => <CityList cities={cities} />;
+export const CityListExample = () => <CityList cities={cities} onclickCity={action('click en city')} />;
