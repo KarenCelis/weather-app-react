@@ -14,8 +14,8 @@ const ForecastChart = ({ data }) => {
         <CartesianGrid />
         <Tooltip />
         <Legend />
-        <Line type='monotone' dataKey='max' stroke='#FF0000' />
-        <Line type='monotone' dataKey='min' stroke='#0000FF' />
+        <Line type='monotone' dataKey='max' stroke='#81b214' />
+        <Line type='monotone' dataKey='min' stroke='#126e82' />
       </LineChart>
     </ResponsiveContainer>
   );
