@@ -9,7 +9,7 @@ import MainPage from './pages/MainPage';
 const App = () => {
   return (
     <Grid container justify='center' direction='row'>
-      <Grid item sm={10}>
+      <Grid item xs={12} sm={10} md={10} lg={8}>
         <Router>
           <Switch>
             <Route exact path='/'>

@@ -32,7 +32,7 @@ const renderState = (state) => {
 };
 const IconState = ({ state }) => {
   return (
-    <IconContext.Provider value={{ size: '5em' }}>
+    <IconContext.Provider value={{ size: '6em' }}>
       {renderState(state)}
     </IconContext.Provider>
   );
