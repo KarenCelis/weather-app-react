@@ -24,9 +24,10 @@ const WelcomeScreen = ({ children }) => {
       }
     };
   }, [vanta]);
+
   return (
-    <div ref={myRefDiv}>
-      oo
+    <div className='full' ref={myRefDiv}>
+      {children}
     </div>
   );
 };
