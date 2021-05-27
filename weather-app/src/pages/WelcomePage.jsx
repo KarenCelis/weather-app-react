@@ -1,7 +1,9 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import Link from '@material-ui/core/Link';
 import { IconContext } from 'react-icons';
 import { WiDaySunny } from 'react-icons/wi';
+import { Link as RouterLink } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import WelcomeScreen from '../components/WelcomeScreen';
 
@@ -18,6 +20,7 @@ const WelcomePage = ({ children }) => {
             </Grid>
             <Grid item container direction='column' justify='center' alignItems='center'>
               <Typography variant='h4' color='inherit'>Weather App</Typography>
+              <Link color='inherit' aria-label='menu' component={RouterLink} to='/main'>Ingresar</Link>
             </Grid>
           </Grid>
         </div>

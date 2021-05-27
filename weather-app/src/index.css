@@ -20,4 +20,10 @@ code {
 .highlight {
     height: 180px;
     background-color: #fdfaf6;
+    color: #233e8b;
+    transition-duration: 3000ms;
+}
+
+.highlight:hover {
+    background-color: #faf1e6;
 }
