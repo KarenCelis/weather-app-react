@@ -11,11 +11,11 @@ const MainPage = (props) => {
     history.push('/city');
   };
   const cities = [
-    { city: 'Buenos Aires', country: 'Argentina' },
-    { city: 'Caracas', country: 'Venezuela' },
-    { city: 'Cancun', country: 'Mexico' },
-    { city: 'Quito', country: 'Ecuador' },
-    { city: 'Lima', country: 'Peru' },
+    { city: 'Buenos Aires', country: 'Argentina', countryCode: 'AR' },
+    { city: 'Caracas', country: 'Venezuela', countryCode: 'VE' },
+    { city: 'Cancun', country: 'Mexico', countryCode: 'MX' },
+    { city: 'Quito', country: 'Ecuador', countryCode: 'EC' },
+    { city: 'Lima', country: 'Peru', countryCode: 'PE' },
   ];
   return (
     <AppFrame>

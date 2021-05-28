@@ -6,12 +6,12 @@ export default {
   component: Forecast,
 };
 const forecastItemList = [
-  { weekDay: 'Miercoles', hour: 12, state: 'sunny', temperature: 45 },
-  { weekDay: 'Jueves', hour: 5, state: 'cloud', temperature: 45 },
-  { weekDay: 'Martes', hour: 12, state: 'rain', temperature: 52 },
-  { weekDay: 'Miercoles', hour: 10, state: 'fog', temperature: 45 },
-  { weekDay: 'Lunes', hour: 6, state: 'rain', temperature: 23 },
-  { weekDay: 'Miercoles', hour: 8, state: 'sunny', temperature: 45 },
-  { weekDay: 'Viernes', hour: 10, state: 'cloudy', temperature: 89 },
+  { weekDay: 'Miercoles', hour: 12, state: 'clouds', temperature: 45 },
+  { weekDay: 'Jueves', hour: 5, state: 'clouds', temperature: 45 },
+  { weekDay: 'Martes', hour: 12, state: 'clouds', temperature: 52 },
+  { weekDay: 'Miercoles', hour: 10, state: 'clouds', temperature: 45 },
+  { weekDay: 'Lunes', hour: 6, state: 'clouds', temperature: 23 },
+  { weekDay: 'Miercoles', hour: 8, state: 'clouds', temperature: 45 },
+  { weekDay: 'Viernes', hour: 10, state: 'clouds', temperature: 89 },
 ];
 export const ForecatsExpl = () => <Forecast forecastItemList={forecastItemList} />;

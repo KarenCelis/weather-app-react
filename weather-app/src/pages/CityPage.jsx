@@ -10,7 +10,7 @@ import Forecast from '../components/Forecast';
 const CityPage = (props) => {
   const city = 'London';
   const country = 'United Kingdom';
-  const state = 'cloud';
+  const state = 'snow';
   const temperature = 45;
   const humidity = 78;
   const wind = 75;
@@ -47,13 +47,13 @@ const CityPage = (props) => {
     },
   ];
   const forecastItemList = [
-    { weekDay: 'Miercoles', hour: 12, state: 'sunny', temperature: 45 },
-    { weekDay: 'Jueves', hour: 5, state: 'cloud', temperature: 45 },
-    { weekDay: 'Martes', hour: 12, state: 'rain', temperature: 52 },
-    { weekDay: 'Miercoles', hour: 10, state: 'fog', temperature: 45 },
-    { weekDay: 'Lunes', hour: 6, state: 'rain', temperature: 23 },
-    { weekDay: 'Miercoles', hour: 8, state: 'sunny', temperature: 45 },
-    { weekDay: 'Viernes', hour: 10, state: 'cloudy', temperature: 89 },
+    { weekDay: 'Miercoles', hour: 12, state: 'drizzle', temperature: 45 },
+    { weekDay: 'Jueves', hour: 5, state: 'drizzle', temperature: 45 },
+    { weekDay: 'Martes', hour: 12, state: 'drizzle', temperature: 52 },
+    { weekDay: 'Miercoles', hour: 10, state: 'drizzle', temperature: 45 },
+    { weekDay: 'Lunes', hour: 6, state: 'drizzle', temperature: 23 },
+    { weekDay: 'Miercoles', hour: 8, state: 'drizzle', temperature: 45 },
+    { weekDay: 'Viernes', hour: 10, state: 'drizzle', temperature: 89 },
   ];
   return (
     <AppFrame>

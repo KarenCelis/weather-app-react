@@ -43,14 +43,14 @@ const CityList = ({ cities, onclickCity }) => {
   const [allWeather, setallWeather] = useState({});
   useEffect(() => {
     const setWeather = (city, country, countryCode) => {
-      const appid = '';
+      const appid = 'c8472e9b2d69def904b1414df9459359';
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&appid=${appid}`;
       axios.get(url)
         .then((response) => {
           const { data } = response;
 
           const temperature = data.main.temp;
-          const state = 'sunny';
+          const state = data.weather[0].main.toLowerCase();
 
           const propName = `${city}-${country}`;
           const propValue = { temperature, state };

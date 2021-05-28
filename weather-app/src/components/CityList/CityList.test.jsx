@@ -10,7 +10,7 @@ const cities = [
   { city: 'Lima', country: 'Peru' },
 ];
 test('CityList renders', async () => {
-  const { findAllByRole } = render(<CityList cities={cities} />);
+  const { findAllByRole } = render(<CityList cities={cities} onclickCity={() => {}} />);
   const items = await findAllByRole('button');
   expect(items).toHaveLength(5);
 
